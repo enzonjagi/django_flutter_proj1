@@ -10,7 +10,7 @@ from rest_framework.decorators import api_view, permission_classes
 def hello_django(request):
     """A Simple Hello view"""
 
-    print("Request received")
+    # print("Request received")
     return Response(
         {'message: Request imefika bro, Rada Django?'}, 
         status=200
