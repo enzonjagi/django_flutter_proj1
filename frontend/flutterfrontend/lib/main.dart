@@ -35,15 +35,15 @@ class MyApp extends StatelessWidget {
         body: Center(
           child: Column(
             children: [
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: const Text("Buda, umefika Area ya mzito"),
+              const Padding(
+                padding: EdgeInsets.all(10.0),
+                child: Text("Buda, umefika Area ya mzito"),
               ),
               Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: ElevatedButton(
                   onPressed: buttonPressed,
-                  child: Text('Finya hii kitu'),
+                  child: const Text('Finya hii kitu'),
                 ),
               ),
 
