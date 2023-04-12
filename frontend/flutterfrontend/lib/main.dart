@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'moviecatalogue.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+
   const MyApp({Key? key}) : super(key: key);
 
   Future<http.Response> buttonPressed() async {
@@ -46,6 +48,20 @@ class MyApp extends StatelessWidget {
                   child: const Text('Finya hii kitu'),
                 ),
               ),
+              Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: ElevatedButton(
+                  child: const Text('Kuna movie kadhaa hapa'),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const TheMovieCatalogue()
+                      ),
+                    );
+                  },
+                ),
+              ),
 
             ],
           ),
@@ -54,3 +70,4 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
