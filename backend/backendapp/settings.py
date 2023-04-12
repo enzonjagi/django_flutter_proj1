@@ -22,16 +22,18 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-env = environ.Env()
+# env = environ.Env()
 
-READ_DOT_ENV_FILE = env.bool('READ_DOT_ENV_FILE', default=False)
-if READ_DOT_ENV_FILE:
-    environ.Env.read_env()
+# READ_DOT_ENV_FILE = env.bool('READ_DOT_ENV_FILE', default=False)
+#if READ_DOT_ENV_FILE:
+#    environ.Env.read_env()
 
-SECRET_KEY = env('SECRET_KEY')
+# SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = env('DEBUG')
+# DEBUG = env('DEBUG')
+DEBUG=True
+SECRET_KEY='django-insecure-gg4aqu30%u+_x%bo)o(in0g2zvlxu66ngw4w-b6+_c_j2l#+hw'
 
 CORS_ORIGIN_WHITELIST = [
     "http://127.0.0.1:40961",

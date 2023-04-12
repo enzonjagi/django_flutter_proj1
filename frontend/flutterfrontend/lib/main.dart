@@ -48,6 +48,20 @@ class MyApp extends StatelessWidget {
                   child: const Text('Finya hii kitu'),
                 ),
               ),
+              Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: ElevatedButton(
+                  child: const Text('Kuna movie kadhaa hapa'),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const TheMovieCatalogue()
+                      ),
+                    );
+                  },
+                ),
+              ),
 
             ],
           ),
